@@ -4,5 +4,14 @@
             "type": "vcs",
             "url": "https://github.com/vasily-kartashov/hamlet-core"
         }
-    ]
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "hamlet/hamlet-core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"    
+        }
+    }
 }
