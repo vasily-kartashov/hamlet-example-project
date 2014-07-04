@@ -1,0 +1,1 @@
+@php "%~dp0hamlet-example-project.php" %*

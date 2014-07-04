@@ -1,2 +1,2 @@
-larix-example-project
+hamlet-example-project
 =====================

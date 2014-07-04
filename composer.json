@@ -1,17 +1,25 @@
 {
-    "respositories": [
+    "name": "hamlet/hamlet-example-project",
+    "authors": [
+        {
+            "name": "Vasily Kartashov",
+            "email": "vasily@kartashov.com"
+        }
+    ],
+    "repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/vasily-kartashov/hamlet-core"
         }
     ],
     "require": {
-        "php": ">=5.5.0",
+        "php": ">=5.4.0",
         "hamlet/hamlet-core": "dev-master"
     },
     "autoload": {
-        "psr-4": {
-            "": "src/"    
-        }
+        "classmap": [
+            "src/",
+            "test/"
+        ]
     }
 }
