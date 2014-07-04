@@ -1,0 +1,8 @@
+{
+    "respositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vasily-kartashov/hamlet-core"
+        }
+    ]
+}
