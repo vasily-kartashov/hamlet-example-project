@@ -4,9 +4,8 @@ namespace Application;
 
 use Application\Environment\DevelopmentEnvironment;
 use Hamlet\Application\AbstractApplication;
-use Hamlet\Entity\JsonEntity;
 use Hamlet\Request\RequestInterface;
-use Hamlet\Resource\EntityResource;
+use Hamlet\Resource\JsonEntityResource;
 
 class Application extends AbstractApplication
 {
@@ -14,7 +13,12 @@ class Application extends AbstractApplication
 
     protected function findResource(RequestInterface $request)
     {
-        return new EntityResource(new JsonEntity('hello world'));
+        if ($request->hasParameter('name')) {
+            $message = 'Hello, ' . $request->getParameter('name') . '!';
+        } else {
+            $message = 'Hello, World!';
+        }
+        return new JsonEntityResource($message);
     }
 
     protected function getCache(RequestInterface $request)
