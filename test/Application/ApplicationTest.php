@@ -3,7 +3,7 @@
 namespace Application;
 
 use Hamlet\Request\RequestBuilder;
-use Hamlet\Response\OKORNotModifiedResponse;
+use Hamlet\Response\OKOrNotModifiedResponse;
 use UnitTestCase;
 
 class ApplicationTest extends UnitTestCase
