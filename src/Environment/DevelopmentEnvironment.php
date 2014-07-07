@@ -2,12 +2,12 @@
 
 namespace Application\Environment;
 
-use Hamlet\Cache\NoCache;
+use Hamlet\Cache\TransientCache;
 
 class DevelopmentEnvironment implements EnvironmentInterface
 {
     public function getCache()
     {
-        return new NoCache();
+        return new TransientCache();
     }
 }
