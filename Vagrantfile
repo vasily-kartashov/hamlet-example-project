@@ -21,6 +21,8 @@ Vagrant.configure("2") do |config|
     config.ssh.forward_x11 = false
     config.vagrant.host = :detect
 
+    config.vm.synced_folder "~/.hamlet/", "/home/vagrant/.hamlet"
+
     config.vm.provision :shell, path: "provision/install.sh"
 
 end
